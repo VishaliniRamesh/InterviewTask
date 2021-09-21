@@ -1,0 +1,12 @@
+<p>URL : {{json}}</p>
+<table *ngIf="contentBody" class="table table-hover" border="1">
+
+    <tr>
+      <th *ngFor="let header of headerCols">{{header | titlecase}}</th>
+    </tr>
+
+    <tr *ngFor="let body of contentBody">
+      <td *ngFor="let b of body">{{b}}</td>
+    </tr>
+
+  </table>
